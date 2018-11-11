@@ -1,0 +1,18 @@
+.jumbotron, h1, h2, h3, h4, h5, h6, label, footer, button {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.jumbotron {
+    margin-top: 100px;
+}
+
+label {
+    margin-bottom: 25px;
+}
+
+body {
+    background-image: url("../images/15136.jpg");
+    /* Created by Starline - Freepik.com */
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+};

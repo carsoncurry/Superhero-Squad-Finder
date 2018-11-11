@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>SuperSquad Sorter</title>
+  
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <style type="text/css">
+      .jumbotron, h1, h2, h3, h4, h5, h6, label, footer, button {
+        font-family: 'Permanent Marker', cursive;
+      }
+
+      .jumbotron {
+          margin-top: 100px;
+      }
+
+      label {
+          margin-bottom: 25px;
+      }
+
+      body {
+          background-color: orangered;
+          font-family: 'Secular One', sans-serif;
+          font-size: 18px;
+      }
+
+    </style>
+  
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+
+      <div class="container">
+        <div class="card-panel col-md-12 center-align">
+          <div class="card-panel left-align">
+            <h2><strong>About You</strong></h2>
+            <br>
+            <label class="active" for="name">Name (required): </label>
+            <input id="name" type="text" class="validate" required>
+            <br>
+            <label class="active" for="powers">Powers (required): </label>
+            <input id="powers" type="text" class="validate" required>
+            <br>
+            <label class="active" for="photo">Photo Link (required): </label>
+            <input id="photo" type="text" class="validate" required>
+          <h3><strong>Question 1</strong></h3>
+          <p>You think that having a secret identity is important to protect your friends and family from harm.</p>
+          <select data-placeholder="" class="browser-default" id="q1">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 2</strong></h3>
+          <p>Your powers were gained through scientific means, such as falling into a vat of toxic waste, being bitten by a radioactive arachnid or good old fashioned evolution.</p>
+          <select data-placeholder="" class="browser-default" id="q2">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 3</strong></h3>
+          <p>You're an experienced superhero, and far past the point where anyone would call you a 'sidekick.'</p>
+          <select data-placeholder="" class="browser-default" id="q3">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 4</strong></h3>
+          <p>You're looking for a team that functions as a family, not a business.</p>
+          <select data-placeholder="" class="browser-default" id="q4">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 5</strong></h3>
+          <p>The public doesn't trust you, and some would even say they hate and fear you for your powers.</p>
+          <select data-placeholder="" class="browser-default" id="q5">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 6</strong></h3>
+          <p>You're in the superhero business to make money, and people will have to poney up if they want you to keep a giant robot from crushing their building.</p>
+          <select data-placeholder="" class="browser-default" id="q6">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 7</strong></h3>
+          <p>You would rather fight crime block-by-block instead of going out to save the world every morning.</p>
+          <select data-placeholder="" class="browser-default" id="q7">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 8</strong></h3>
+          <p>You're more of an outsider, but you're looking for a group of people who can lend a hand when needed.</p>
+          <select data-placeholder="" class="browser-default" id="q8">
+            <option value="">Choose and option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 9</strong></h3>
+          <p>You believe that magic is real no matter what those eggheads may say, and you maybe even got your powers from it.</p>
+          <select data-placeholder="" class="browser-default" id="q9">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <h3><strong>Question 10</strong></h3>
+          <p>You find that your powers make you superior to everyone else, and you're therefore not beholden to silly things like 'laws' or 'morality.'</p>
+          <select data-placeholder="" class="browser-default" id="q10">
+            <option value="">Choose an option!</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <hr>
+          <button type="submit" data-target="modal1" class="btn-lg btn-primary" id="submitBtn">Submit!</button>
+          </div>
+        </div>
+      </div>
+  
+      <br>
+
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">API Squads List</a> | <a href="https://github.com/carsoncurry/Superhero-Squad-Finder">GitHub Repo</a></p>
+        </div>
+      </footer>
+
+      <div id="modal1" class="modal col-md-12">
+        <div class="modal-content col-md-12">
+          <div class="col-md-6 justify-content-center">
+            <h1>Your Hero</h1>
+            <h2 id="heroName"></h2>
+            <h5 id="heroPowers"></h5>
+          </div>
+          <div class="col-md-6 justify-content-center">
+            <h1>Your Squad</h1>
+            <h2 id="matchName"></h2>
+            <h5 id="matchDes"></h5>
+          </div>
+          <div class="col-md-6 justify-content-center">
+            <img id="heroPic" src="" alt="Hero Pic" width=650px>
+          </div>
+          <div class="col-md-6 justify-content-center">
+            <img id="matchPic" src="" alt="Super Squad" width=650px>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn">Done</a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#submitBtn").on("click", function() {
+        function validateForm() {
+          var isValid = true;
+          $('.validate').each(function() {
+            if ($(this).val() === '') {
+              isValid = false;
+            }
+          });
+
+          $('.browser-default').each(function() {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+
+          return isValid;
+        }
+
+        if (validateForm() == true) {
+          var newHero = {
+            name: $('#name').val().trim(),
+            powers: $('#powers').val().trim(),
+            profilePic: $('#photo').val().trim(),
+            scores: [
+              $('#q1').val(),
+              $('#q2').val(),
+              $('#q3').val(),
+              $('#q4').val(),
+              $('#q5').val(),
+              $('#q6').val(),
+              $('#q7').val(),
+              $('#q8').val(),
+              $('#q9').val(),
+              $('#q10').val()
+            ]
+          };
+
+          var currentURL = window.location.origin;
+
+          $.post(currentURL + "/api/friends", newHero, function(data) {
+            $("#matchName").text(data.name);
+            $("#matchDes").text(data.description);
+            $("#matchPic").attr("src", data.profilePic);
+            $("#heroName").text(newHero.name);
+            $("#heroPowers").text(newHero.powers);
+            $("#heroPic").attr("src", newHero.profilePic);
+          });
+
+          $('.modal').modal();
+
+          $('#name').val("");
+          $('#powers').val("");
+          $('#photo').val("");
+          $('#q1').val("");
+          $('#q2').val("");
+          $('#q3').val("");
+          $('#q4').val("");
+          $('#q5').val("");
+          $('#q6').val("");
+          $('#q7').val("");
+          $('#q8').val("");
+          $('#q9').val("");
+          $('#q10').val("");
+        } else {
+          alert ("Please, fill out all fields.")
+        }
+      });
+    });
+
+
+    </script>
+  
+  
+  </body>
+</html>
